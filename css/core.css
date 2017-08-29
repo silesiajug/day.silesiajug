@@ -1,0 +1,415 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Raleway:500,600,700);
+html {
+  font-size: 100%;
+  max-width: 100%;
+}
+body {
+  background: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #727272;
+  line-height: 25px;
+  text-align: center;
+  overflow-x: hidden !important;
+  margin: auto !important;
+}
+img {
+  max-width: 100%;
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fefefe;
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+}
+.preloader .status {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(../images/loading.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin: -20px 0 0 -20px;
+}
+a {
+  text-decoration: none;
+  -webkit-transition: all ease 0.25s;
+  transition: all ease 0.25s;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:focus {
+  outline: inherit;
+  color: inherit;
+}
+strong {
+  font-weight: 700;
+}
+.strong {
+  font-weight: 700;
+}
+.btn-default {
+  border: 1px solid #FF2E63;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+}
+.btn-default:hover {
+  background: transparent;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  padding-left: 0 !important;
+}
+li {
+  list-style: none;
+}
+.bg-2 {
+  background: #F7F8FA;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  color: #323232;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+h1 {
+  font-size: 2.813rem;
+  line-height: 3.75rem;
+  font-weight: 500;
+}
+h2 {
+  font-size: 36px;
+  line-height: 3.125rem;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+h5 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+h6 {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 500;
+}
+.color-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  height: 650px;
+}
+header {
+  background: url(../images/photo-bg-top-banner.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 75px;
+}
+.navigation-header {
+  padding-top: 130px;
+}
+.intro-section {
+  text-align: center;
+}
+.intro-section .calendar,
+.intro-section .place {
+  display: inline-flex;
+  align-items: center;
+}
+.intro-section .calendar span,
+.intro-section .place span {
+  margin: 0 20px;
+  font-size: 24px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+.intro-section .logo {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.intro-section .counter div {
+  margin-right: 30px;
+  display: inline-block;
+  color: white;
+}
+.intro-section .counter div span {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+.intro-section .counter div span.number {
+  font-size: 64px;
+  border-bottom: 1px solid #FF2E63;
+  padding-bottom: 35px;
+}
+.intro-section .counter div span.period {
+  font-size: 19px;
+  padding-top: 5px;
+}
+.intro-section .counter div span.completed {
+  font-size: 44px;
+  border-bottom: 1px solid #FF2E63;
+  padding-bottom: 20px;
+}
+.navbar-header img {
+  max-height: 26px;
+}
+.navbar-nav > li > a:hover {
+  background: inherit;
+}
+.non-sticky .navbar-nav.navbar-right:last-child {
+  margin-right: 0;
+}
+.non-sticky .navbar-nav > li > a {
+  font-size: 25px;
+  padding: 0;
+  padding-left: 5px;
+  padding-top: 3px;
+  color: #ffffff;
+}
+.non-sticky .navbar-nav > li > a.register {
+  border: 1px solid #FF2E63;
+  border-radius: 5px;
+}
+.sticky-navigation {
+  min-height: 75px;
+  background: #ffffff;
+  -webkit-backface-visibility: hidden;
+  border: 0;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+}
+.sticky-navigation .navbar-header {
+  padding-top: 8px;
+}
+.sticky-navigation .navbar-nav li a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #323232;
+  padding: 10px 15px;
+}
+.sticky-navigation .navbar-nav li a.register {
+  border: 1px solid #FF2E63;
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+.sticky-navigation .main-navigation {
+  padding-top: 18px;
+}
+.sticky-navigation .main-navigation .current a {
+  -webkit-backface-visibility: hidden;
+  outline: inherit;
+  position: relative;
+}
+section {
+  padding: 90px 0;
+}
+section .line {
+  height: 1px;
+  width: 70px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #FF2E63;
+}
+section .description {
+  font-size: 25px;
+  color: #323232;
+}
+section#about .col-md-6 {
+  margin-top: 50px;
+  text-align: left;
+}
+section#organizers .col-md-8 {
+  margin-top: 50px;
+  text-align: left;
+}
+section#team .wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+section#team .wrapper .person {
+  max-width: 200px;
+  margin: 0 auto;
+}
+section#team .wrapper .person span {
+  display: block;
+  margin: 5px 0;
+}
+section#team .wrapper .person span.name {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+section#team .wrapper .person span.description {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  text-transform: uppercase;
+}
+section#team .wrapper .person .social a {
+  margin: 0 5px;
+}
+section#sponsors img {
+  margin-top: 50px;
+}
+section#contact {
+  height: inherit !important;
+}
+section#contact img {
+  position: relative;
+  left: 420px;
+  bottom: 160px;
+}
+section#contact a {
+  margin-top: 30px;
+}
+section#map {
+  background-image: url('../images/map-image.png');
+  background-size: cover;
+  background-position: 30% 20%;
+}
+section#map .location {
+  position: relative;
+  left: 70px;
+  top: -30px;
+  width: 380px;
+  height: 282px;
+  background: white;
+  padding: 30px;
+  text-align: left;
+}
+section#map .location span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+section#map .location img {
+  margin-right: 5px;
+}
+section#map .location .line {
+  margin: 20px 0;
+}
+section#map .location .place {
+  margin: 10px 0;
+}
+section#stats {
+  height: auto !important;
+  background-image: url('../images/photo-bg-parallax.jpg');
+  background-position: 20% 20%;
+  background-size: cover;
+}
+section#stats .counter {
+  display: flex;
+  justify-content: space-between;
+}
+section#stats .counter div {
+  margin-right: 30px;
+  display: inline-block;
+  color: white;
+}
+section#stats .counter div span {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+section#stats .counter div span.number {
+  color: #FF2E63;
+  font-size: 64px;
+  border-bottom: 1px solid #FF2E63;
+  padding-bottom: 35px;
+}
+section#stats .counter div span.completed {
+  color: #FF2E63;
+  font-size: 44px;
+  border-bottom: 1px solid #FF2E63;
+  padding-bottom: 20px;
+}
+section#stats .counter div span.period {
+  font-size: 19px;
+  padding-top: 5px;
+}
+section#speaker .col-md-8 {
+  text-align: left;
+  margin-top: 50px;
+}
+section#speaker .col-md-4 {
+  margin-top: 50px;
+}
+section#speaker .col-md-4 .social {
+  margin-top: 10px;
+}
+section#speaker .col-md-4 .social a {
+  margin: 0 5px;
+}
+section#register {
+  height: auto !important;
+  background-image: url('../images/photo-bg-parallax-joinus.jpg');
+  background-position: 20% 20%;
+  background-size: cover;
+}
+section#register h2 {
+  color: white;
+}
+section#register img {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+section#register a {
+  color: white;
+  font-size: 20px;
+  background: transparent;
+  padding: 10px 30px;
+}
+section#agenda {
+  height: auto !important;
+}
+section#agenda .schedule {
+  margin-top: 50px;
+}
+section#agenda .schedule .row {
+  text-align: left;
+  border-bottom: 1px solid #E1E2E2;
+  padding: 20px 0;
+}
+section#agenda .schedule .row time {
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  margin-left: 30px;
+}
