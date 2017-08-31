@@ -16,6 +16,9 @@ body {
 img {
   max-width: 100%;
 }
+.rounded {
+  border-radius: 50%;
+}
 .preloader {
   position: fixed;
   top: 0;
@@ -268,6 +271,9 @@ section#team .wrapper .person {
   max-width: 200px;
   margin: 0 auto;
 }
+section#team .wrapper .person > img {
+  max-height: 200px;
+}
 section#team .wrapper .person span {
   display: block;
   margin: 5px 0;
@@ -286,8 +292,25 @@ section#team .wrapper .person span.description {
 section#team .wrapper .person .social a {
   margin: 0 5px;
 }
-section#sponsors img {
+section#sponsors .wrapper {
+  display: flex;
+  justify-content: space-between;
   margin-top: 50px;
+}
+section#sponsors .line {
+  margin-bottom: 50px;
+}
+section#sponsors .sponsor {
+  max-height: 100px;
+  margin: 0 auto 50px auto;
+}
+section#sponsors .sponsor.gold {
+  margin-top: 50px;
+}
+section#sponsors .description {
+  color: #fd5761;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 section#contact {
   height: inherit !important;

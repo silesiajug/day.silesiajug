@@ -22,6 +22,10 @@ img {
     max-width: 100%;
 }
 
+.rounded {
+    border-radius: 50%;
+}
+
 // PRELOADER
 .preloader {
     position: fixed;
@@ -323,6 +327,9 @@ section {
             .person {
                 max-width: 200px;
                 margin: 0 auto;
+                > img {
+                    max-height: 200px;
+                }
                 span {
                     display: block;
                     margin: 5px 0;
@@ -347,8 +354,25 @@ section {
         }
     }
     &#sponsors {
-        img {
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
             margin-top: 50px;
+        }
+        .line {
+            margin-bottom: 50px;
+        }
+        .sponsor {
+            max-height: 100px;
+            margin: 0 auto 50px auto;
+            &.gold {
+                margin-top: 50px;
+            }
+        }
+        .description {
+            color: #fd5761;
+            text-transform: uppercase;
+            font-weight: 500;
         }
     }
     &#contact {

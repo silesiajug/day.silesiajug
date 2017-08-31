@@ -216,4 +216,10 @@ RESPONSIVE FIXES
   .collapse.in .nav > li {
     display: block;
   }
+  section#sponsors .wrapper {
+    display: block;
+  }
+  section#sponsors .sponsor {
+    display: block;
+  }
 }
